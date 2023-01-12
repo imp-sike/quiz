@@ -57,8 +57,7 @@ class PublishedView extends ConsumerWidget {
                             .elementAt(index);
                     return QuizCard(
                         published: docSnap.get("published"),
-                        // TODO: change here
-                        imageAsset: docSnap.get("title"),
+                        imageAsset: docSnap.get("image"),
                         title: docSnap.get("title"),
                         desc: docSnap.get("desc"),
                         price: docSnap.get("price"),

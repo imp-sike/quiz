@@ -44,7 +44,7 @@ class HomeView extends ConsumerWidget {
                   },
                 ),
                 NavigationCard(
-                  imageAsset: "assets/add.png",
+                  imageAsset: "assets/published.png",
                   cardText: "Published Quizzes",
                   onTap: () {
                     // Navigate to panel 2
@@ -55,7 +55,7 @@ class HomeView extends ConsumerWidget {
                   },
                 ),
                 NavigationCard(
-                  imageAsset: "assets/add.png",
+                  imageAsset: "assets/draft.png",
                   cardText: "Drafts",
                   onTap: () {
                     // Navigate to panel 3
@@ -67,7 +67,7 @@ class HomeView extends ConsumerWidget {
                   },
                 ),
                 NavigationCard(
-                  imageAsset: "assets/add.png",
+                  imageAsset: "assets/leaderboard.png",
                   cardText: "Score Leaderboard",
                   onTap: () {
                     // Navigate to panel 3
@@ -78,7 +78,7 @@ class HomeView extends ConsumerWidget {
                   },
                 ),
                 NavigationCard(
-                  imageAsset: "assets/add.png",
+                  imageAsset: "assets/bell.png",
                   cardText: "Send Push Notification",
                   onTap: () {
                     // Navigate to panel 3

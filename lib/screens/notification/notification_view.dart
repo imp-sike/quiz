@@ -25,7 +25,7 @@ class NotificationView extends ConsumerWidget {
         ],
         centerTitle: true,
         title: Text(
-          "Add New Quiz".toUpperCase(),
+          "Send Notification".toUpperCase(),
           style: GoogleFonts.poppins(fontWeight: FontWeight.w500),
         ),
       ),
