@@ -1,9 +1,11 @@
 import 'package:backend_quiz/components/cards/navigation_cards.dart';
+import 'package:backend_quiz/screens/auth/login_view.dart';
 import 'package:backend_quiz/screens/leaderboard/leaderboard_view.dart';
 import 'package:backend_quiz/screens/notification/notification_view.dart';
 import 'package:backend_quiz/screens/published/published_view.dart';
 import 'package:backend_quiz/screens/quick_add/quick_add_view.dart';
 import 'package:backend_quiz/screens/quiz_add/add_quiz_view.dart';
+import 'package:backend_quiz/services/auth_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -86,6 +88,20 @@ class HomeView extends ConsumerWidget {
                         context,
                         CupertinoPageRoute(
                             builder: (context) => NotificationView()));
+                  },
+                ),
+                 NavigationCard(
+                  imageAsset: "assets/logout.png",
+                  cardText: "Log Out",
+                  onTap: () {
+                    // Navigate to panel 3
+                    FirebaseAuthService().logOutUser()!.then((value){
+                      Navigator.pushReplacement(
+                        context,
+                        CupertinoPageRoute(
+                            builder: (context) => LoginView()));
+                    });
+                    
                   },
                 ),
               ],
